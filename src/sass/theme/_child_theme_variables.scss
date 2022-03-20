@@ -1,0 +1,24 @@
+// Use this file to overwrite the basic Bootstrap variables and add your own variables
+// To overwrite a Bootstrap variable you don´t have to touch the Bootstrap folder.
+// Just copy a variable from src/sass/assets/bootstrap5/_variables.scss, paste it here and edit the value.
+
+$dark-2: #240b01;
+$light-2: #ffeaa4;
+$primary-2: #ffca2a;
+$secondary-2: #b07201;
+
+$primary: $primary-2;
+$secondary: $secondary-2;
+$dark: $dark-2;
+$light: $light-2;
+
+$custom-theme-colors: (
+  "light2": #ffffcd,
+  "black": #000,
+  "white": #fff,
+);
+
+@import "../../../node_modules/bootstrap/scss/_functions";
+@import "../../../node_modules/bootstrap/scss/_variables";
+
+$theme-colors: map-merge($custom-theme-colors, $theme-colors);
